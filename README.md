@@ -1,6 +1,6 @@
 # Pre commit hook
 
-Checks in our pre-commit hook
+Checks in our pre-receive hook
 
 * Syntax check with php lint (“php -l”): We check every committed file has a valid PHP syntax.
 * Sync check of composer.json and composer.lock files: We check these two files are committed together in order to avoid committing the json but not the lock and generate some issue to another developers.
@@ -19,17 +19,17 @@ Checks in our pre-commit hook
 
 The recommended way to install this library is through [Composer](http://getcomposer.org):
 
-add `juizmill/pre-commit` as a composer dependency.
+add `juizmill/pre-receive` as a composer dependency.
 
 composer.json
 ```bash
 "require-dev": {
     ...
-    "juizmill/pre-commit": "dev-master"
+    "juizmill/pre-receive": "dev-master"
 }
 ```
 
-`php composer.phar update juizmill/pre-commit`
+`php composer.phar update juizmill/pre-receive`
 
 
 **USAGE:**
@@ -51,9 +51,9 @@ or
 
 ```
     cd [project]
-    rm -rf .git/hooks/pre-commit
-    cp vendor/juizmill/pre-commit/hooks/pre-commit .git/hooks/pre-commit
-    chmod -R 777 .git/hooks/pre-commit
+    rm -rf .git/hooks/pre-receive
+    cp vendor/juizmill/pre-receive/hooks/pre-receive .git/hooks/pre-receive
+    chmod -R 777 .git/hooks/pre-receive
 ```
 
 Remembering to set up the hooks
@@ -62,7 +62,7 @@ Remembering to set up the hooks
 Custom config
 --------------
 
-Copy arquives `vendor/juizmill/pre-commit/config/*` to [project]
+Copy arquives `vendor/juizmill/pre-receive/config/*` to [project]
 
 
 Reference

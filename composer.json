@@ -1,8 +1,8 @@
 {
-    "name": "juizmill/pre-commit",
+    "name": "juizmill/pre-receive",
     "description": "Pre-commit hook",
     "type": "library",
-    "homepage": "https://github.com/juizmill/pre-commit",
+    "homepage": "https://github.com/juizmill/pre-receive",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4":{
-            "PreCommit\\": ""
+            "PreReceive\\": ""
         }
     },
     "require": {
